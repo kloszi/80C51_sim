@@ -1,0 +1,1 @@
+Prze³¹cznik - podczas symulacji jeœli klikniemy 2 razy na prze³¹cznik to zmieni stan na przeciwny

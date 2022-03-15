@@ -1,0 +1,26 @@
+                   ; Symulator MCS_51
+                   
+0000: 75 80 00       mov P0,#0x0h
+0003: 75 90 00       mov P1,#0x0h
+0006: 75 A0 01       mov P2,#0x1h
+                   
+                            
+                   stop:
+0009: E5 80          mov A,P0
+000B: 64 01          xrl A,#0x1h
+000D: 03             rr  A
+000E: F5 80          mov P0,A
+                     
+0010: E5 A0          mov A,P2
+0012: 23             rl  A
+0013: F5 A0          mov P2,A                 
+                      
+0015: E5 90          mov A,P1
+0017: 60 F0          jz  stop
+                   stop1:
+0019: E5 90          mov A,P1
+001B: 60 EC          jz  stop
+001D: 80 FA          sjmp   stop1   
+                   
+                     
+001F:                .END

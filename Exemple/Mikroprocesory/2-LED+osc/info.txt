@@ -1,0 +1,4 @@
+W tym przyk³adzie pokazane jest jak jednym procesorem sterowaæ pare ósemek LED'owych przez multipleksowanie. im wiêcej w szeregu bêdzie ósemek ledowych tym s³abiej bêd¹ œwieciæ.
+
+
+UDANEJ ZABAWY   

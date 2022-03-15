@@ -1,0 +1,1 @@
+Dioda dwukierunkowa tzn. jesli prad p³ynie w jedna strone to swieci siê jedna dioda, jeœli pr¹d przep³ywa w drug¹ stronê to œwieci druga dioda( inny kolor)

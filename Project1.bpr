@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Project1.exe"/>
+    <OBJFILES value="Project1.obj Unit1.obj AND_dlg.obj Bramki.obj group_element.obj 
+      LED7_dlg.obj List_elements.obj MCS_51_dlg.obj mouse_event.obj Wire_dlg.obj 
+      Generator_dlg.obj Unit2.obj NOT_dlg.obj OR_dlg.obj Help_dlg.obj 
+      Schematic_paint.obj NANA_dlg.obj LED1_dlg.obj switch_dlg.obj 
+      8951_simulation_frame.obj info_dlg.obj Procesor\89C51.obj"/>
+    <RESFILES value="Project1.res zasoby.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm AND_dlg.dfm LED7_dlg.dfm MCS_51_dlg.dfm Wire_dlg.dfm 
+      Generator_dlg.dfm NOT_dlg.dfm OR_dlg.dfm Help_dlg.dfm Schematic_paint.dfm 
+      NANA_dlg.dfm LED1_dlg.dfm switch_dlg.dfm info_dlg.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="inet.lib bcbie.lib tee.lib vclx.lib bcbsmp.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib tee.lib bcbie.lib inet.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi vcldb.bpi vclx.bpi bdertl.bpi ibxpress.bpi 
+      dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi 
+      vcldbx.bpi dss.bpi teeqr.bpi visualclx.bpi dsnapcrba.bpi dsnapcon.bpi 
+      bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi 
+      inetdb.bpi nmfast.bpi webdsnap.bpi bcbie.bpi websnap.bpi soaprtl.bpi 
+      dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;Procesor"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Project1.cpp"/>
+    <INCLUDEPATH value="Procesor;$(BCB)\Projects;..\..;Procesory;..\..\..;&quot;Pulpit\Worbenh - symulator -8051\TMP36&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="Procesor;$(BCB)\Projects;..\..;Procesory;..\..\..;&quot;Pulpit\Worbenh - symulator -8051\TMP36&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IProcesor -I$(BCB)\Projects -I..\.. -IProcesory -I..\..\.. 
+      -I&quot;Pulpit\Worbenh - symulator -8051\TMP36&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -4 -b- -k -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Project1.res" FORMNAME="" UNITNAME="Project1.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project1.cpp" FORMNAME="" UNITNAME="Project1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="Form1" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AND_dlg.cpp" FORMNAME="AND_frame" UNITNAME="AND_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Bramki.cpp" FORMNAME="" UNITNAME="Bramki.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="group_element.cpp" FORMNAME="" UNITNAME="group_element.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LED7_dlg.cpp" FORMNAME="LED7_form" UNITNAME="LED7_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="List_elements.cpp" FORMNAME="" UNITNAME="List_elements.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCS_51_dlg.cpp" FORMNAME="MCS51_frame" UNITNAME="MCS_51_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mouse_event.cpp" FORMNAME="" UNITNAME="mouse_event.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Wire_dlg.cpp" FORMNAME="Wire_form" UNITNAME="Wire_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Generator_dlg.cpp" FORMNAME="Generator" UNITNAME="Generator_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="zasoby.RES" FORMNAME="" UNITNAME="zasoby.RES" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NOT_dlg.cpp" FORMNAME="NOT_frame" UNITNAME="NOT_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OR_dlg.cpp" FORMNAME="OR_frame" UNITNAME="OR_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Help_dlg.cpp" FORMNAME="Help_form" UNITNAME="Help_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Schematic_paint.cpp" FORMNAME="Paint_box" UNITNAME="Schematic_paint" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NANA_dlg.cpp" FORMNAME="NAND_frame" UNITNAME="NANA_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LED1_dlg.cpp" FORMNAME="Swith_form" UNITNAME="LED1_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="switch_dlg.cpp" FORMNAME="Led1_form" UNITNAME="switch_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="8951_simulation_frame.cpp" FORMNAME="" UNITNAME="8951_simulation_frame" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="info_dlg.cpp" FORMNAME="Info_form" UNITNAME="info_dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Procesor\89C51.CPP" FORMNAME="" UNITNAME="89C51" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclado60.bpl=Borland ADO DB Components
+c:\program files\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

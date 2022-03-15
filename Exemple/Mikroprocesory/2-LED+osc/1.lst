@@ -1,0 +1,89 @@
+                   ;        Symulator MCS_51
+                   
+0000:                .org   0 
+0000:              .EQU     DL1,    78h     
+0000:              .EQU     DL2,    79h        
+0000:              .EQU  counter1,  77h
+0000:              .EQU  counter2,  76h
+                   
+                   
+                   
+                   
+0000: 75 90 03             mov    p1,#00000011b ;wygaszenie obu wyswietlaczy   
+0003: 75 78 00              mov    Dl1,#0
+0006: 75 79 00              mov    Dl2,#0
+0009: 90 00 5C              mov    DPTR,#TAB
+000C: 75 77 00             mov    counter1,#0 
+000F: 75 76 00              mov    counter2,#0
+0012: E4                    clr A
+                            
+                   stop:
+0013: E5 77                 mov  A,counter1
+0015: 93                    movc A,@A+DPTR
+0016: F5 78                 mov  DL1,A      ;za³adowanie 1 cyfry
+                   
+0018: E5 76                 mov  A,counter2
+001A: 93                    movc A,@A+DPTR
+001B: F5 79                 mov  DL2,A      ;za³adowanie 2 cyfry
+                   
+001D: 12 00 36             lcall  DELAY 
+                           
+0020: 05 77                inc  counter1
+0022: E5 77                 mov  A,counter1
+0024: B4 09 0D              cjne A,#9,NEXT_count
+0027: 75 77 00              mov  counter1,#0
+                            
+002A: 05 76                 inc  counter2
+002C: E5 76                 mov  A,counter2
+002E: B4 09 03              cjne A,#9,NEXT_count
+0031: 75 76 00              mov  counter2,#0
+                            
+                   NEXT_count:
+                            
+                                                    
+                    
+                    
+                          
+0034: 80 DD           sjmp  stop            ;petla nieskonczona
+                   
+                   
+                   DELAY:
+0036: 75 E0 FF              mov    Acc,#0xffh
+                   DDD2:
+                    
+0039: 75 90 00             mov    p1,#00000000b ;zgaszenie wyswietlaczy
+003C: 85 78 80             mov    P0,DL1;2 ;wystawienie wartosci
+003F: 75 90 02             mov    p1,#00000010b
+0042: 00                    nop
+0043: 00                    nop
+0044: 00                    nop
+0045: 00                    nop
+0046: 00                    nop
+0047: 00                    nop
+                   
+                   
+0048: 75 90 00             mov    p1,#00000000b ;zgaszenie wyswietlaczy
+004B: 85 79 80              mov    P0,DL2;2 ;wystawienie wartosci
+004E: 75 90 01             mov    p1,#00000001b
+0051: 00                    nop
+0052: 00                    nop
+0053: 00                    nop
+0054: 00                    nop
+0055: 00                    nop
+0056: 00                    nop
+                            
+0057: 15 E0                dec Acc
+0059: 70 DE                jnz DDD2
+                   
+                   
+                   
+005B: 22                    ret
+                   TAB:
+005C: 84 9F 82 8A 
+      99 C8         .DB     10000100b,10011111b,10000010b,10001010b,10011001b,1
+0062: C0 9E 80 88 
+                    .DB     11000000b,10011110b,10000000b,10001000b         
+                   
+                     
+                   
+0066:                       .END

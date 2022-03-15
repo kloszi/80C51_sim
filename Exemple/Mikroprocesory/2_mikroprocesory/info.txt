@@ -1,0 +1,7 @@
+S¹ to 2 mikroprocesory po³aczone kaskadowo. 
+Po za³adowaniu schematu do symulatora klikaj¹c prawym klawiszem myszy 
+na w³aœciwoœci wgraj program kaska.asm. Po wgraniu uruchom symulacjê
+(prawym górnym rógu "Simulate").W czasie symulacji kliknij 2 razty na symbol 
+prze³¹cznika a na wyœwietlaczy powinna sie znieniæ cyferka.
+
+UDANEJ ZABAWY   
