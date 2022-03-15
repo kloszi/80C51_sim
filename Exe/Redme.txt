@@ -1,0 +1,7 @@
+Changed:
+
+version 0.123 - 29-05-2007
+- translate to englisch
+- corect some draw function 
+
+version 0.122 -First draw

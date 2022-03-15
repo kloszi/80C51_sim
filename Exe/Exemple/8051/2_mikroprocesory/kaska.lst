@@ -1,0 +1,38 @@
+                   ;        Symulator MCS_51
+0000:                .org   0 
+0000:              .EQU     DL1,    78h     
+0000:              .EQU  counter1,  77h
+0000:              .EQU  port,      76h
+                   
+0000: 75 78 00           mov    Dl1,#0
+0003: 75 77 00           mov    counter1,#0 
+0006: 75 76 00           mov    port,#0
+0009: 90 00 29           mov    DPTR,#TAB
+                   
+                   stop:
+000C: 85 90 76           mov    port,P1
+000F: E5 77              mov    A,counter1
+0011: 93                 movc   A,@A+DPTR
+0012: F5 80              mov    P0,A;2 ;wystawienie wartosci
+0014: 05 77              inc    counter1
+0016: E5 77              mov    A,counter1
+0018: B4 0A 06           cjne   A,#10,NEXT_count
+001B: 63 A0 FF           xrl    P2,#0xff    
+001E: 75 77 00           mov    counter1,#0
+                   NEXT_count:
+                            
+0021: E5 90           mov  A,P1
+0023: 65 76           xrl  A,port
+0025: 70 E5           jnz  stop                             
+                    
+0027: 80 F8           sjmp  NEXT_count              ;petla nieskonczona
+                   
+                   TAB:
+0029: 84 9F A2 8A 
+      99 C8         .DB     10000100b,10011111b,10100010b,10001010b,10011001b,1
+002F: C0 9E 80 88 
+                    .DB     11000000b,10011110b,10000000b,10001000b         
+                   
+                     
+                   
+0033:                       .END
